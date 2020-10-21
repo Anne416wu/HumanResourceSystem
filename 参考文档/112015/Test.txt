@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+TestDoucument
+
+
+this lax editing
+=======
+TestDocument
+>>>>>>> origin/master
+=======
+TestDocument
+>>>>>>> origin/master
