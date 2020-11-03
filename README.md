@@ -12,7 +12,7 @@
         + 文档的规范形式：**不建议采用ISO模板，使用RUP模板**
         + 使用的工具：
             * CM工具git、PM工具github、bug跟踪工具github
-            * 需求建模、设计工具：未定(Visio/EA/StarUML)
+            * 需求建模、设计工具：[Drawio](http://draw.io)(参考软件Visio/EA/StarUML)
             * 数据库设计工具：未定(PowerDesigner/ERWin)
             * 原型开发工具：未定(MockPlus/Modao/JustInMind/AxurePro)
         + 模拟项目分析、系统需求调研、学习相关领域只是
@@ -25,10 +25,10 @@
           > 根据问题定义，完成对软件问题的形式化描述。
           > 采用面向对象的方法，需要完成
           >
-          > * Use case
-          > * Class
-          > * Sequence
-          > * Status transition
+          > * 用例图
+          > * 类图
+          > * 流程图
+          > * 状态转换图
           > * 操作屏幕、菜单、输入输出
           > * 系统性能要求
         + 周报8
@@ -52,12 +52,14 @@
 * git项目管理说明
 
     ```bash
+       # 项目内开发
        git checkout dev # 切换到开发分支(具体分支分配情况视后续任务分配而定)
        git commit -m "comment" # 提交更改到本地按仓库
        git push origin <branch> # 推送更改到远端仓库
        git pull # 从远端拉取更新
+   # fork开发，把项目fork到自己的仓库中，在自己仓库中修改后提交pull request请求
     ```
-
+    
     * 任务在project面板中管理
     * bug在issue面板中提交
 * 课程结束需要提交的文档
