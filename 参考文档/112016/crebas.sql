@@ -53,309 +53,309 @@ drop table if exists sys_map_user_role;
 /*==============================================================*/
 create table report_entity_age_info
 (
-   range_1_req_num      int comment '16~24ËêĞèÇóÈËÊı',
-   range_2_req_num      int comment '25~34ËêĞèÇóÈËÊı',
-   range_3_req_num      int comment '35~44ËêĞèÇóÈËÊı',
-   range_4_req_num      int comment '45ËêÒÔÉÏĞèÇóÈËÊı',
-   no_request_req_num   int comment 'ÎŞÒªÇóĞèÇóÈËÊı',
-   range_1_hunt_num     int comment '16~24ËêÇóÖ°ÈËÊı',
-   range_2_hunt_num     int comment '25~34ËêÇóÖ°ÈËÊı',
-   range_3_hunt_num     int comment '35~44ËêÇóÖ°ÈËÊı',
-   range_4_hunt_num     int comment '45ËêÒÔÉÏÇóÖ°ÈËÊı',
-   no_request_hunt_num  int comment 'ÎŞÒªÇóÇóÖ°ÈËÊı',
+   range_1_req_num      int comment '16~24å²éœ€æ±‚äººæ•°',
+   range_2_req_num      int comment '25~34å²éœ€æ±‚äººæ•°',
+   range_3_req_num      int comment '35~44å²éœ€æ±‚äººæ•°',
+   range_4_req_num      int comment '45å²ä»¥ä¸Šéœ€æ±‚äººæ•°',
+   no_request_req_num   int comment 'æ— è¦æ±‚éœ€æ±‚äººæ•°',
+   range_1_hunt_num     int comment '16~24å²æ±‚èŒäººæ•°',
+   range_2_hunt_num     int comment '25~34å²æ±‚èŒäººæ•°',
+   range_3_hunt_num     int comment '35~44å²æ±‚èŒäººæ•°',
+   range_4_hunt_num     int comment '45å²ä»¥ä¸Šæ±‚èŒäººæ•°',
+   no_request_hunt_num  int comment 'æ— è¦æ±‚æ±‚èŒäººæ•°',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_age_info comment 'ÄêÁä·Ö×é±í';
+alter table report_entity_age_info comment 'å¹´é¾„åˆ†ç»„è¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_bigdemand_info                          */
 /*==============================================================*/
 create table report_entity_bigdemand_info
 (
-   bigdemand_type       varchar(100) comment 'Ö°ÒµÀà±ğ',
-   career_id            int comment 'Ö°Òµ´úÂë',
-   bigdemand_demand     int comment 'ĞèÇóÈËÊı',
-   bigdemand_hunt       int comment 'ÇóÖ°ÈËÊı',
+   bigdemand_type       varchar(100) comment 'èŒä¸šç±»åˆ«',
+   career_id            int comment 'èŒä¸šä»£ç ',
+   bigdemand_demand     int comment 'éœ€æ±‚äººæ•°',
+   bigdemand_hunt       int comment 'æ±‚èŒäººæ•°',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_bigdemand_info comment 'ĞèÇó×î´óµÄÖ°Òµ±í';
+alter table report_entity_bigdemand_info comment 'éœ€æ±‚æœ€å¤§çš„èŒä¸šè¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_culture_Info                            */
 /*==============================================================*/
 create table report_entity_culture_Info
 (
-   junior_high_school_req_num int comment '³õÖĞ¼°ÒÔÏÂĞèÇóÈËÊı',
-   voc_req_num          int comment 'Ö°¸ßĞèÇóÈËÊı',
-   tec_req_num          int comment '¼¼Ğ£ĞèÇóÈËÊı',
-   sec_req_num          int comment 'ÖĞ×¨ĞèÇóÈËÊı',
-   college_req_num      int comment '´ó×¨ĞèÇóÈËÊı',
-   university_req_num   int comment '´óÑ§ĞèÇóÈËÊı',
-   master_req_num       int comment 'Ë¶Ê¿ĞèÇóÈËÊı',
-   no_request_req_nmu   int comment 'ÎŞÒªÇóĞèÇóÈËÊı',
-   junior_high_school_hunt_num int comment '³õÖĞ¼°ÒÔÏÂÇóÖ°ÈËÊı',
-   voc_hunt_num         int comment 'Ö°¸ßÇóÖ°ÈËÊı',
-   tec_hunt_num         int comment '¼¼Ğ£ÇóÖ°ÈËÊı',
-   sec_hunt_num         int comment 'ÖĞ×¨ÇóÖ°ÈËÊı',
-   college_hunt_num     int comment '´ó×¨ÇóÖ°ÈËÊı',
-   university_hunt_num  int comment '´óÑ§ÇóÖ°ÈËÊı',
-   master_hunt_num      int comment 'Ë¶Ê¿ÇóÖ°ÈËÊı',
-   no_request_hunt_nmu  int comment 'ÎŞÒªÇóÇóÖ°ÈËÊı',
+   junior_high_school_req_num int comment 'åˆä¸­åŠä»¥ä¸‹éœ€æ±‚äººæ•°',
+   voc_req_num          int comment 'èŒé«˜éœ€æ±‚äººæ•°',
+   tec_req_num          int comment 'æŠ€æ ¡éœ€æ±‚äººæ•°',
+   sec_req_num          int comment 'ä¸­ä¸“éœ€æ±‚äººæ•°',
+   college_req_num      int comment 'å¤§ä¸“éœ€æ±‚äººæ•°',
+   university_req_num   int comment 'å¤§å­¦éœ€æ±‚äººæ•°',
+   master_req_num       int comment 'ç¡•å£«éœ€æ±‚äººæ•°',
+   no_request_req_nmu   int comment 'æ— è¦æ±‚éœ€æ±‚äººæ•°',
+   junior_high_school_hunt_num int comment 'åˆä¸­åŠä»¥ä¸‹æ±‚èŒäººæ•°',
+   voc_hunt_num         int comment 'èŒé«˜æ±‚èŒäººæ•°',
+   tec_hunt_num         int comment 'æŠ€æ ¡æ±‚èŒäººæ•°',
+   sec_hunt_num         int comment 'ä¸­ä¸“æ±‚èŒäººæ•°',
+   college_hunt_num     int comment 'å¤§ä¸“æ±‚èŒäººæ•°',
+   university_hunt_num  int comment 'å¤§å­¦æ±‚èŒäººæ•°',
+   master_hunt_num      int comment 'ç¡•å£«æ±‚èŒäººæ•°',
+   no_request_hunt_nmu  int comment 'æ— è¦æ±‚æ±‚èŒäººæ•°',
    id                   int not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_culture_Info comment 'ÎÄ»¯³Ì¶È·Ö×é±í';
+alter table report_entity_culture_Info comment 'æ–‡åŒ–ç¨‹åº¦åˆ†ç»„è¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_hunt_info                               */
 /*==============================================================*/
 create table report_entity_hunt_info
 (
-   hunt_id              varchar(100) comment 'ÇóÖ°Õßid',
-   grow_hunt_num        int comment 'ĞÂ³É³¤Ê§ÒµÇàÄêÇóÖ°ÈËÊı',
-   emptounemp_hunt_num  int comment '¾ÍÒµ×ªÊ§ÒµÈËÔ±ÇóÖ°ÈËÊı',
-   other_hunt_num       int comment 'ÆäËûÊ§ÒµÈËÔ±ÇóÖ°ÈËÊı',
-   pract_hunt_num       int comment 'ÔÚÒµÈËÔ±ÇóÖ°ÈËÊı',
-   laid_off_hunt_num    int comment 'ÏÂ¸ÚÖ°¹¤ÇóÖ°ÈËÊı',
-   retiree_hunt_num     int comment 'ÍËĞİÈËÔ±ÇóÖ°ÈËÊı',
-   instructor_hunt_num  int comment 'ÔÚÑ§ÈËÔ±ÇóÖ°ÈËÊı',
-   city_hunt_num        int comment '±¾ÊĞÅ©´åÈËÔ±ÇóÖ°ÈËÊı',
-   outcity_hunt_num     int comment 'Íâ²ºÈËÔ±ÇóÖ°ÈËÊı',
+   hunt_id              varchar(100) comment 'æ±‚èŒè€…id',
+   grow_hunt_num        int comment 'æ–°æˆé•¿å¤±ä¸šé’å¹´æ±‚èŒäººæ•°',
+   emptounemp_hunt_num  int comment 'å°±ä¸šè½¬å¤±ä¸šäººå‘˜æ±‚èŒäººæ•°',
+   other_hunt_num       int comment 'å…¶ä»–å¤±ä¸šäººå‘˜æ±‚èŒäººæ•°',
+   pract_hunt_num       int comment 'åœ¨ä¸šäººå‘˜æ±‚èŒäººæ•°',
+   laid_off_hunt_num    int comment 'ä¸‹å²—èŒå·¥æ±‚èŒäººæ•°',
+   retiree_hunt_num     int comment 'é€€ä¼‘äººå‘˜æ±‚èŒäººæ•°',
+   instructor_hunt_num  int comment 'åœ¨å­¦äººå‘˜æ±‚èŒäººæ•°',
+   city_hunt_num        int comment 'æœ¬å¸‚å†œæ‘äººå‘˜æ±‚èŒäººæ•°',
+   outcity_hunt_num     int comment 'å¤–åŸ äººå‘˜æ±‚èŒäººæ•°',
    id                   varchar(100) not null,
-   common_remarks       varchar(100)  comment '±¸×¢',
-   common_del_flag      varchar(100)  comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100)  comment '´´½¨Õßid',
-   common_modify_user_id varchar(100)  comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100)  comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100)  comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100)  comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100)  comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_hunt_info comment 'ÇóÖ°ÈËÔ±';
+alter table report_entity_hunt_info comment 'æ±‚èŒäººå‘˜';
 
 /*==============================================================*/
 /* Table: report_entity_industry_info                           */
 /*==============================================================*/
 create table report_entity_industry_info
 (
-   industry_one         int comment 'µÚÒ»²úÒµĞèÇóÈËÊı',
-   industry_two         int comment 'µÚ¶ş²úÒµĞèÇóÈËÊı',
-   industry_three       int comment 'µÚÈı²úÒµĞèÇóÈËÊı',
-   status               int comment '×´Ì¬ĞÅÏ¢',
+   industry_one         int comment 'ç¬¬ä¸€äº§ä¸šéœ€æ±‚äººæ•°',
+   industry_two         int comment 'ç¬¬äºŒäº§ä¸šéœ€æ±‚äººæ•°',
+   industry_three       int comment 'ç¬¬ä¸‰äº§ä¸šéœ€æ±‚äººæ•°',
+   status               int comment 'çŠ¶æ€ä¿¡æ¯',
    id                   varchar(100) not null,
-   common_remarks        varchar(100) comment '±¸×¢',
-   common_del_flag       varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id  varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id  varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date    datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date    datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks        varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag       varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id  varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id  varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date    datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date    datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_industry_info comment '°´²úÒµ½øĞĞ·Ö×é';
+alter table report_entity_industry_info comment 'æŒ‰äº§ä¸šè¿›è¡Œåˆ†ç»„';
 
 /*==============================================================*/
 /* Table: report_entity_job_info                                */
 /*==============================================================*/
 create table report_entity_job_info
 (
-   per_cha_demand       int comment 'µ¥Î»¸ºÔğÈËµÄĞèÇóÈËÊı',
-   per_cha_hunt         int comment 'µ¥Î»¸ºÔğÈËµÄÇóÖ°ÈËÊı',
-   pro_skill_demand     int comment '×¨Òµ¼¼ÊõÈËÔ±µÄĞèÇóÈËÊı',
-   pro_skill_hunt       int comment '×¨Òµ¼¼ÊõÈËÔ±µÄÇóÖ°ÈËÊı',
-   staff_demand         int comment '°ìÊÂÈËÔ±ºÍÓĞ¹ØÈËÔ±µÄĞèÇóÈËÊı',
-   staff_hunt           int comment '°ìÊÂÈËÔ±ºÍÓĞ¹ØÈËÔ±µÄÇóÖ°ÈËÊı',
-   bus_demand           int comment 'ÉÌÒµºÍ·şÎñÈËÔ±µÄĞèÇóÈËÊı',
-   bus_hunt             int comment 'ÉÌÒµºÍ·şÎñÈËÔ±µÄÇóÖ°ÈËÊı',
-   product_demand       int comment 'Å©ÁÖÄÁÓæË®ÀûÉú²úÈËÔ±µÄĞèÇóÈËÊı',
-   product_hunt         int comment 'Å©ÁÖÄÁÓæË®ÀûÉú²úÈËÔ±µÄÇóÖ°ÈËÊı',
-   tran_demand          int comment 'Éú²úÔËÊäÉè±¸²Ù×÷¹¤ĞèÇóÈËÊı',
-   tran_hunt            int comment 'Éú²úÔËÊäÉè±¸²Ù×÷¹¤ÇóÖ°ÈËÊı',
-   other_hunt           int comment 'ÆäËû',
+   per_cha_demand       int comment 'å•ä½è´Ÿè´£äººçš„éœ€æ±‚äººæ•°',
+   per_cha_hunt         int comment 'å•ä½è´Ÿè´£äººçš„æ±‚èŒäººæ•°',
+   pro_skill_demand     int comment 'ä¸“ä¸šæŠ€æœ¯äººå‘˜çš„éœ€æ±‚äººæ•°',
+   pro_skill_hunt       int comment 'ä¸“ä¸šæŠ€æœ¯äººå‘˜çš„æ±‚èŒäººæ•°',
+   staff_demand         int comment 'åŠäº‹äººå‘˜å’Œæœ‰å…³äººå‘˜çš„éœ€æ±‚äººæ•°',
+   staff_hunt           int comment 'åŠäº‹äººå‘˜å’Œæœ‰å…³äººå‘˜çš„æ±‚èŒäººæ•°',
+   bus_demand           int comment 'å•†ä¸šå’ŒæœåŠ¡äººå‘˜çš„éœ€æ±‚äººæ•°',
+   bus_hunt             int comment 'å•†ä¸šå’ŒæœåŠ¡äººå‘˜çš„æ±‚èŒäººæ•°',
+   product_demand       int comment 'å†œæ—ç‰§æ¸”æ°´åˆ©ç”Ÿäº§äººå‘˜çš„éœ€æ±‚äººæ•°',
+   product_hunt         int comment 'å†œæ—ç‰§æ¸”æ°´åˆ©ç”Ÿäº§äººå‘˜çš„æ±‚èŒäººæ•°',
+   tran_demand          int comment 'ç”Ÿäº§è¿è¾“è®¾å¤‡æ“ä½œå·¥éœ€æ±‚äººæ•°',
+   tran_hunt            int comment 'ç”Ÿäº§è¿è¾“è®¾å¤‡æ“ä½œå·¥æ±‚èŒäººæ•°',
+   other_hunt           int comment 'å…¶ä»–',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_job_info comment '¹¤×÷ĞÅÏ¢±í°´Ö°Òµ·Ö×é';
+alter table report_entity_job_info comment 'å·¥ä½œä¿¡æ¯è¡¨æŒ‰èŒä¸šåˆ†ç»„';
 
 /*==============================================================*/
 /* Table: report_entity_profession_info                         */
 /*==============================================================*/
 create table report_entity_profession_info
 (
-   farm                 int comment 'Å©ÁÖÄÁÓæ',
-   mining               int comment '²É¿ó',
-   create_              int comment 'ÖÆÔì',
-   electric             int comment 'µçÁ¦',
-   structure            int comment '½¨Öş',
-   traffic              int comment '½»Í¨',
-   information          int comment 'ĞÅÏ¢´«Êä',
-   wholesale            int comment 'Åú·¢',
-   room                 int comment '×¡ËŞ',
-   financial            int comment '½ğÈÚ',
-   estate               int comment '·¿µØ²ú',
-   lease                int comment '×âÁŞ',
-   research             int comment '¿ÆÑĞ',
-   water                int comment 'Ë®Àû',
-   resident             int comment '¾ÓÃñ·şÎñ',
-   education            int comment '½ÌÓı',
-   health               int comment 'ÎÀÉú',
-   culture              int comment 'ÎÄ»¯',
-   management           int comment '¹«¹²¹ÜÀí',
-   international        int comment '¹ú¼Ê×éÖ¯',
+   farm                 int comment 'å†œæ—ç‰§æ¸”',
+   mining               int comment 'é‡‡çŸ¿',
+   create_              int comment 'åˆ¶é€ ',
+   electric             int comment 'ç”µåŠ›',
+   structure            int comment 'å»ºç­‘',
+   traffic              int comment 'äº¤é€š',
+   information          int comment 'ä¿¡æ¯ä¼ è¾“',
+   wholesale            int comment 'æ‰¹å‘',
+   room                 int comment 'ä½å®¿',
+   financial            int comment 'é‡‘è',
+   estate               int comment 'æˆ¿åœ°äº§',
+   lease                int comment 'ç§Ÿèµ',
+   research             int comment 'ç§‘ç ”',
+   water                int comment 'æ°´åˆ©',
+   resident             int comment 'å±…æ°‘æœåŠ¡',
+   education            int comment 'æ•™è‚²',
+   health               int comment 'å«ç”Ÿ',
+   culture              int comment 'æ–‡åŒ–',
+   management           int comment 'å…¬å…±ç®¡ç†',
+   international        int comment 'å›½é™…ç»„ç»‡',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_profession_info comment '°´ĞĞÒµ½øĞĞ·Ö×é';
+alter table report_entity_profession_info comment 'æŒ‰è¡Œä¸šè¿›è¡Œåˆ†ç»„';
 
 /*==============================================================*/
 /* Table: report_entity_sex_info                                */
 /*==============================================================*/
 create table report_entity_sex_info
 (
-   male_req_num         int comment 'ÄĞĞÔĞèÇóÈËÊı',
-   female_req_nmu       int comment 'Å®ĞÔĞèÇóÈËÊı',
-   no_request_req_num   int comment 'ÎŞÒªÇóĞèÇóÈËÊı',
-   male_hunt_num        int comment 'ÄĞĞÔÇóÖ°ÈËÊı',
-   female_hunt_nmu      int comment 'Å®ĞÔÇóÖ°ÈËÊı',
-   no_request_hunt_num  int comment 'ÎŞÒªÇóÇóÖ°ÈËÊı',
+   male_req_num         int comment 'ç”·æ€§éœ€æ±‚äººæ•°',
+   female_req_nmu       int comment 'å¥³æ€§éœ€æ±‚äººæ•°',
+   no_request_req_num   int comment 'æ— è¦æ±‚éœ€æ±‚äººæ•°',
+   male_hunt_num        int comment 'ç”·æ€§æ±‚èŒäººæ•°',
+   female_hunt_nmu      int comment 'å¥³æ€§æ±‚èŒäººæ•°',
+   no_request_hunt_num  int comment 'æ— è¦æ±‚æ±‚èŒäººæ•°',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_sex_info comment 'ĞÔ±ğĞÅÏ¢·Ö×é±í';
+alter table report_entity_sex_info comment 'æ€§åˆ«ä¿¡æ¯åˆ†ç»„è¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_skill_Info                              */
 /*==============================================================*/
 create table report_entity_skill_Info
 (
-   career_qual_five_req_num int comment 'Ö°Òµ×Ê¸ñÎå¼¶ĞèÇóÈËÊı',
-   career_qual_four_req_num int comment 'Ö°Òµ×Ê¸ñËÄ¼¶ĞèÇóÈËÊı',
-   career_qual_three_req_num int comment 'Ö°Òµ×Ê¸ñÈı¼¶ĞèÇóÈËÊı',
-   career_qual_two_req_num int comment 'Ö°Òµ×Ê¸ñ¶ş¼¶ĞèÇóÈËÊı',
-   career_qual_one_req_num int comment 'Ö°Òµ×Ê¸ñÒ»¼¶ĞèÇóÈËÊı',
-   pri_tech_career_req_num int comment '³õ¼¶×¨Òµ¼¼ÊõÖ°ÎñĞèÇóÈËÊı',
-   med_tech_career_req_num int comment 'ÖĞ¼¶×¨Òµ¼¼ÊõÖ°ÎñĞèÇóÈËÊı',
-   adv_tech_career_req_num int comment '¸ß¼¶×¨Òµ¼¼ÊõÖ°ÎñĞèÇóÈËÊı',
-   no_tech_career_req_num int comment 'ÎŞĞèÇóµÈ¼¶»òÖ°ÎñĞèÇóÈËÊı',
-   no_request_req_num   int comment 'ÎŞÒªÇóĞèÇóÈËÊı',
-   career_qual_five_hunt_num int comment 'Ö°Òµ×Ê¸ñÎå¼¶ÇóÖ°ÈËÊı',
-   career_qual_four_hunt_num int comment 'Ö°Òµ×Ê¸ñËÄ¼¶ÇóÖ°ÈËÊı',
-   career_qual_three_hunt_num int comment 'Ö°Òµ×Ê¸ñÈı¼¶ÇóÖ°ÈËÊı',
-   career_qual_two_hunt_num int comment 'Ö°Òµ×Ê¸ñ¶ş¼¶ÇóÖ°ÈËÊı',
-   career_qual_one_hunt_num int comment 'Ö°Òµ×Ê¸ñÒ»¼¶ÇóÖ°ÈËÊı',
-   pri_tech_career_hunt_num int comment '³õ¼¶×¨Òµ¼¼ÊõÖ°ÎñÇóÖ°ÈËÊı',
-   med_tech_career_hunt_num int comment 'ÖĞ¼¶×¨Òµ¼¼ÊõÖ°ÎñÇóÖ°ÈËÊı',
-   adv_tech_career_hunt_num int comment '¸ß¼¶×¨Òµ¼¼ÊõÖ°ÎñÇóÖ°ÈËÊı',
-   no_tech_career_hunt_num int comment 'ÎŞĞèÇóµÈ¼¶»òÖ°ÎñÇóÖ°ÈËÊı',
-   no_request_hunt_num  int comment 'ÎŞÒªÇóÇóÖ°ÈËÊı',
+   career_qual_five_req_num int comment 'èŒä¸šèµ„æ ¼äº”çº§éœ€æ±‚äººæ•°',
+   career_qual_four_req_num int comment 'èŒä¸šèµ„æ ¼å››çº§éœ€æ±‚äººæ•°',
+   career_qual_three_req_num int comment 'èŒä¸šèµ„æ ¼ä¸‰çº§éœ€æ±‚äººæ•°',
+   career_qual_two_req_num int comment 'èŒä¸šèµ„æ ¼äºŒçº§éœ€æ±‚äººæ•°',
+   career_qual_one_req_num int comment 'èŒä¸šèµ„æ ¼ä¸€çº§éœ€æ±‚äººæ•°',
+   pri_tech_career_req_num int comment 'åˆçº§ä¸“ä¸šæŠ€æœ¯èŒåŠ¡éœ€æ±‚äººæ•°',
+   med_tech_career_req_num int comment 'ä¸­çº§ä¸“ä¸šæŠ€æœ¯èŒåŠ¡éœ€æ±‚äººæ•°',
+   adv_tech_career_req_num int comment 'é«˜çº§ä¸“ä¸šæŠ€æœ¯èŒåŠ¡éœ€æ±‚äººæ•°',
+   no_tech_career_req_num int comment 'æ— éœ€æ±‚ç­‰çº§æˆ–èŒåŠ¡éœ€æ±‚äººæ•°',
+   no_request_req_num   int comment 'æ— è¦æ±‚éœ€æ±‚äººæ•°',
+   career_qual_five_hunt_num int comment 'èŒä¸šèµ„æ ¼äº”çº§æ±‚èŒäººæ•°',
+   career_qual_four_hunt_num int comment 'èŒä¸šèµ„æ ¼å››çº§æ±‚èŒäººæ•°',
+   career_qual_three_hunt_num int comment 'èŒä¸šèµ„æ ¼ä¸‰çº§æ±‚èŒäººæ•°',
+   career_qual_two_hunt_num int comment 'èŒä¸šèµ„æ ¼äºŒçº§æ±‚èŒäººæ•°',
+   career_qual_one_hunt_num int comment 'èŒä¸šèµ„æ ¼ä¸€çº§æ±‚èŒäººæ•°',
+   pri_tech_career_hunt_num int comment 'åˆçº§ä¸“ä¸šæŠ€æœ¯èŒåŠ¡æ±‚èŒäººæ•°',
+   med_tech_career_hunt_num int comment 'ä¸­çº§ä¸“ä¸šæŠ€æœ¯èŒåŠ¡æ±‚èŒäººæ•°',
+   adv_tech_career_hunt_num int comment 'é«˜çº§ä¸“ä¸šæŠ€æœ¯èŒåŠ¡æ±‚èŒäººæ•°',
+   no_tech_career_hunt_num int comment 'æ— éœ€æ±‚ç­‰çº§æˆ–èŒåŠ¡æ±‚èŒäººæ•°',
+   no_request_hunt_num  int comment 'æ— è¦æ±‚æ±‚èŒäººæ•°',
    id                   varchar(100) not null,
-   common_remarks       varchar(100)  comment '±¸×¢',
-   common_del_flag      varchar(100)  comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100)  comment '´´½¨Õßid',
-   common_modify_user_id varchar(100)  comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date    datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date    datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100)  comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100)  comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100)  comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100)  comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date    datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date    datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_skill_Info comment '¼¼ÄÜµÈ¼¶·Ö×é±í';
+alter table report_entity_skill_Info comment 'æŠ€èƒ½ç­‰çº§åˆ†ç»„è¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_small_info                              */
 /*==============================================================*/
 create table report_entity_small_info
 (
-   career_id            int comment 'Ö°Òµ´úÂë',
-   smalldemand_type     varchar(100) comment 'Ö°ÒµÀà±ğ',
-   smalldemand_demand   int comment 'ĞèÇóÈËÊı',
-   smalldemand_hunt     int comment 'ÇóÖ°ÈËÊı',
+   career_id            int comment 'èŒä¸šä»£ç ',
+   smalldemand_type     varchar(100) comment 'èŒä¸šç±»åˆ«',
+   smalldemand_demand   int comment 'éœ€æ±‚äººæ•°',
+   smalldemand_hunt     int comment 'æ±‚èŒäººæ•°',
    id                   int not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_small_info comment 'ĞèÇóĞ¡µÄÖ°ÒµĞÅÏ¢±íÇé¿ö';
+alter table report_entity_small_info comment 'éœ€æ±‚å°çš„èŒä¸šä¿¡æ¯è¡¨æƒ…å†µ';
 
 /*==============================================================*/
 /* Table: report_entity_supply_info                             */
 /*==============================================================*/
 create table report_entity_supply_info
 (
-   supply_quarter       varchar(100) comment '¼¾¶È',
-   supply_demand        int comment 'ĞèÇóÈËÊı',
-   supply_hunt          int comment 'ÇóÖ°ÈËÊı',
-   status               int comment '×´Ì¬ĞÅÏ¢',
+   supply_quarter       varchar(100) comment 'å­£åº¦',
+   supply_demand        int comment 'éœ€æ±‚äººæ•°',
+   supply_hunt          int comment 'æ±‚èŒäººæ•°',
+   status               int comment 'çŠ¶æ€ä¿¡æ¯',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_supply_info comment '¹©ÇóÈËÊıĞÅÏ¢±í';
+alter table report_entity_supply_info comment 'ä¾›æ±‚äººæ•°ä¿¡æ¯è¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_survey                                  */
@@ -363,67 +363,67 @@ alter table report_entity_supply_info comment '¹©ÇóÈËÊıĞÅÏ¢±í';
 create table report_entity_survey
 (
    id                   varchar(100) not null,
-   survey_name          varchar(100) comment '±¨±íµÄÃû×Ö',
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   survey_name          varchar(100) comment 'æŠ¥è¡¨çš„åå­—',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_survey comment 'µ÷²é±í';
+alter table report_entity_survey comment 'è°ƒæŸ¥è¡¨';
 
 /*==============================================================*/
 /* Table: report_entity_unit_info                               */
 /*==============================================================*/
 create table report_entity_unit_info
 (
-   state                int comment '¹úÓĞÆóÒµÈËÊı',
-   collective           int comment '¼¯ÌåÆóÒµ',
-   cooperation          int comment '¹É·İºÏ×÷',
-   joint                int comment 'ÁªÓªÆóÒµ',
-   limited              int comment 'ÓĞÏŞÔğÈÎÆóÒµ',
-   share                int comment '¹É·İºÏ×÷ÆóÒµ',
-   private              int comment 'Ë½ÓªÆóÒµ',
-   other                int comment 'ÆäËûÆóÒµ',
-   hk                   int comment '¸Û°ÄÌ¨ÆóÒµ',
-   "foreign"            int comment 'ÍâÉÌÍ¶×ÊÆóÒµ',
-   self                 int comment '¸öÌå¾­Óª',
+   state                int comment 'å›½æœ‰ä¼ä¸šäººæ•°',
+   collective           int comment 'é›†ä½“ä¼ä¸š',
+   cooperation          int comment 'è‚¡ä»½åˆä½œ',
+   joint                int comment 'è”è¥ä¼ä¸š',
+   limited              int comment 'æœ‰é™è´£ä»»ä¼ä¸š',
+   share                int comment 'è‚¡ä»½åˆä½œä¼ä¸š',
+   private              int comment 'ç§è¥ä¼ä¸š',
+   other                int comment 'å…¶ä»–ä¼ä¸š',
+   hk                   int comment 'æ¸¯æ¾³å°ä¼ä¸š',
+   "foreign"            int comment 'å¤–å•†æŠ•èµ„ä¼ä¸š',
+   self                 int comment 'ä¸ªä½“ç»è¥',
    id                   int not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table report_entity_unit_info comment '°´ÓÃÈËµ¥Î»ĞÔÖÊ·Ö×é';
+alter table report_entity_unit_info comment 'æŒ‰ç”¨äººå•ä½æ€§è´¨åˆ†ç»„';
 
 /*==============================================================*/
 /* Table: sys_entity_count                                      */
 /*==============================================================*/
 create table sys_entity_count
 (
-   sum                  int comment '×ÜÊı',
-   average              int comment 'Æ½¾ùÖµ',
+   sum                  int comment 'æ€»æ•°',
+   average              int comment 'å¹³å‡å€¼',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    primary key (id)
 );
 
-alter table sys_entity_count comment 'Í³¼Æ±í¶ÔÊı¾İµÄÍ³¼Æ';
+alter table sys_entity_count comment 'ç»Ÿè®¡è¡¨å¯¹æ•°æ®çš„ç»Ÿè®¡';
 
 /*==============================================================*/
 /* Table: sys_entity_dict                                       */
@@ -436,172 +436,172 @@ create table sys_entity_dict
    description          varchar(100),
    sort                 int,
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
    primary key (id)
 );
 
-alter table sys_entity_dict comment '×Öµä±í';
+alter table sys_entity_dict comment 'å­—å…¸è¡¨';
 
 /*==============================================================*/
 /* Table: sys_entity_function                                   */
 /*==============================================================*/
 create table sys_entity_function
 (
-   name                 varchar(100) comment 'ÓÃ»§Ãû',
-   code                 varchar(100) comment '¹¦ÄÜ´úÂë£¬×÷Îª¹¦ÄÜµÄ±êÊ¶·û',
-   type                 varchar(100) comment '0 - ¹¦ÄÜ·ÖÀà£¬µã»÷Õ¹¿ª×Ó¹¦ÄÜ;1 - ¹¦ÄÜ£¬µã»÷½øÈë¹¦ÄÜÒ³',
-   parent_id            varchar(100) comment '¹¦ÄÜËùÊôµÄ·ÖÀà',
-   url                  varchar(100) comment 'Èç¹ûÊÇ¹¦ÄÜ£¬Ôò´ËÏî´ú±í¹¦ÄÜÒ³µØÖ·£¬·ñÔòÎª¿Õ',
-   index_               varchar(100) comment 'ÅÅĞò£¬¹¦ÄÜÀ¸ÉÏ×ÔÉÏ¶øÏÂ£¬´Ó0¿ªÊ¼µİÔö(Ïàµ±ÓÚÊı×éÖĞµÄĞòºÅ)',
+   name                 varchar(100) comment 'ç”¨æˆ·å',
+   code                 varchar(100) comment 'åŠŸèƒ½ä»£ç ï¼Œä½œä¸ºåŠŸèƒ½çš„æ ‡è¯†ç¬¦',
+   type                 varchar(100) comment '0 - åŠŸèƒ½åˆ†ç±»ï¼Œç‚¹å‡»å±•å¼€å­åŠŸèƒ½;1 - åŠŸèƒ½ï¼Œç‚¹å‡»è¿›å…¥åŠŸèƒ½é¡µ',
+   parent_id            varchar(100) comment 'åŠŸèƒ½æ‰€å±çš„åˆ†ç±»',
+   url                  varchar(100) comment 'å¦‚æœæ˜¯åŠŸèƒ½ï¼Œåˆ™æ­¤é¡¹ä»£è¡¨åŠŸèƒ½é¡µåœ°å€ï¼Œå¦åˆ™ä¸ºç©º',
+   index_               varchar(100) comment 'æ’åºï¼ŒåŠŸèƒ½æ ä¸Šè‡ªä¸Šè€Œä¸‹ï¼Œä»0å¼€å§‹é€’å¢(ç›¸å½“äºæ•°ç»„ä¸­çš„åºå·)',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç£¨0£ºÕı³££»1£ºÉ¾³ı£»2£ºÉóºË£©',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   enable               bool comment '¹¦ÄÜÊÇ·ñÆôÓÃ',
-   icon                 varchar(100) comment 'Í¼±ê',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°ï¼ˆ0ï¼šæ­£å¸¸ï¼›1ï¼šåˆ é™¤ï¼›2ï¼šå®¡æ ¸ï¼‰',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   enable               bool comment 'åŠŸèƒ½æ˜¯å¦å¯ç”¨',
+   icon                 varchar(100) comment 'å›¾æ ‡',
    primary key (id)
 );
 
-alter table sys_entity_function comment '¹¦ÄÜ±í';
+alter table sys_entity_function comment 'åŠŸèƒ½è¡¨';
 
 /*==============================================================*/
 /* Table: sys_entity_notice                                     */
 /*==============================================================*/
 create table sys_entity_notice
 (
-   infom_title          varchar(100) comment 'Í¨Öª±êÌâ',
-   inform_content       varchar(100) comment 'Í¨ÖªÄÚÈİ',
-   release_time         datetime comment '·¢²¼Ê±¼ä',
-   release_unit         varchar(100) comment '·¢²¼µ¥Î»',
+   infom_title          varchar(100) comment 'é€šçŸ¥æ ‡é¢˜',
+   inform_content       varchar(100) comment 'é€šçŸ¥å†…å®¹',
+   release_time         datetime comment 'å‘å¸ƒæ—¶é—´',
+   release_unit         varchar(100) comment 'å‘å¸ƒå•ä½',
    id                   varchar(100) not null,
-   common_remarks        varchar(100) comment '±¸×¢',
-   common_del_flag       varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id  varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id  varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
+   common_remarks        varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag       varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id  varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id  varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
    primary key (id)
 );
 
-alter table sys_entity_notice comment '·¢²¼Í¨Öª±í';
+alter table sys_entity_notice comment 'å‘å¸ƒé€šçŸ¥è¡¨';
 
 /*==============================================================*/
 /* Table: sys_entity_role                                       */
 /*==============================================================*/
 create table sys_entity_role
 (
-   name                 varchar(100) comment 'ĞÕÃû',
-   code                 varchar(100) comment '½ÇÉ«±êÊ¶·û',
+   name                 varchar(100) comment 'å§“å',
+   code                 varchar(100) comment 'è§’è‰²æ ‡è¯†ç¬¦',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
    primary key (id)
 );
 
-alter table sys_entity_role comment '½ÇÉ«±í';
+alter table sys_entity_role comment 'è§’è‰²è¡¨';
 
 /*==============================================================*/
 /* Table: sys_entity_user                                       */
 /*==============================================================*/
 create table sys_entity_user
 (
-   username             varchar(100) comment 'ÓÃ»§Ãû',
-   password             varchar(100) comment 'ÃÜÂë',
+   username             varchar(100) comment 'ç”¨æˆ·å',
+   password             varchar(100) comment 'å¯†ç ',
    id                   varchar(100) not null comment 'id',
-   type                 varchar(100) comment '0 - ¹ÜÀíÔ±£¬1 - Ê¡£¬2 - ÊĞ£¬3 - ¼à²âµã',
-   province             varchar(100) comment 'À´×ÔÓÚÄÄ¸öÊ¡£¬´æ´¢×Öµäid',
-   city                 varchar(100) comment 'À´×ÔÓÚÄÄ¸öÊĞ£¬´æ´¢×Öµäid',
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   real_name            varchar(100) comment 'ÕæÊµĞÕÃû',
-   nick_name            varchar(100) comment 'êÇ³Æ',
-   head_img             varchar(100) comment 'Í·Ïñ',
-   phone_number         varchar(100) comment 'ÊÖ»úºÅ',
-   email                varchar(100) comment 'ÓÊÏäµØÖ·',
-   last_login_ip        varchar(100) comment 'ÉÏ´ÎµÇÂ½ip',
-   current_login_ip     varchar(100) comment '±¾´ÎµÇÂ½ip',
-   last_login_date      datetime comment 'ÉÏ´ÎµÇÂ½Ê±¼ä',
-   current_login_date   datetime comment '±¾´ÎµÇÂ½Ê±¼ä',
-   market_name          varchar(100) comment 'ÈËÁ¦×ÊÔ´ÊĞ³¡Ãû',
-   contact_name         varchar(100) comment 'ÁªÏµÈËĞÕÃû',
-   contact_phone        varchar(100) comment 'ÁªÏµÈËÊÖ»ú',
-   contact_fax          varchar(100) comment 'ÁªÏµÈË´«Õæ',
+   type                 varchar(100) comment '0 - ç®¡ç†å‘˜ï¼Œ1 - çœï¼Œ2 - å¸‚ï¼Œ3 - ç›‘æµ‹ç‚¹',
+   province             varchar(100) comment 'æ¥è‡ªäºå“ªä¸ªçœï¼Œå­˜å‚¨å­—å…¸id',
+   city                 varchar(100) comment 'æ¥è‡ªäºå“ªä¸ªå¸‚ï¼Œå­˜å‚¨å­—å…¸id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   real_name            varchar(100) comment 'çœŸå®å§“å',
+   nick_name            varchar(100) comment 'æ˜µç§°',
+   head_img             varchar(100) comment 'å¤´åƒ',
+   phone_number         varchar(100) comment 'æ‰‹æœºå·',
+   email                varchar(100) comment 'é‚®ç®±åœ°å€',
+   last_login_ip        varchar(100) comment 'ä¸Šæ¬¡ç™»é™†ip',
+   current_login_ip     varchar(100) comment 'æœ¬æ¬¡ç™»é™†ip',
+   last_login_date      datetime comment 'ä¸Šæ¬¡ç™»é™†æ—¶é—´',
+   current_login_date   datetime comment 'æœ¬æ¬¡ç™»é™†æ—¶é—´',
+   market_name          varchar(100) comment 'äººåŠ›èµ„æºå¸‚åœºå',
+   contact_name         varchar(100) comment 'è”ç³»äººå§“å',
+   contact_phone        varchar(100) comment 'è”ç³»äººæ‰‹æœº',
+   contact_fax          varchar(100) comment 'è”ç³»äººä¼ çœŸ',
    primary key (id)
 );
 
-alter table sys_entity_user comment 'ÓÃ»§±í';
+alter table sys_entity_user comment 'ç”¨æˆ·è¡¨';
 
 /*==============================================================*/
 /* Table: sys_map_role_function                                 */
 /*==============================================================*/
 create table sys_map_role_function
 (
-   role_id              varchar(100) comment '½ÇÉ«±í_id',
+   role_id              varchar(100) comment 'è§’è‰²è¡¨_id',
    id                   varchar(100) not null,
-   common_remarks       varchar(100)  comment '±¸×¢',
-   common_del_flag      varchar(100)  comment 'É¾³ı±ê¼Ç£¨0£ºÕı³££»1£ºÉ¾³ı£»2£ºÉóºË£©',
-   common_create_user_id varchar(100)  comment '´´½¨Õßid',
-   common_modify_user_id varchar(100)  comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date   datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date   datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
-   function_id          varchar(100) comment '¹¦ÄÜ±íid',
+   common_remarks       varchar(100)  comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100)  comment 'åˆ é™¤æ ‡è®°ï¼ˆ0ï¼šæ­£å¸¸ï¼›1ï¼šåˆ é™¤ï¼›2ï¼šå®¡æ ¸ï¼‰',
+   common_create_user_id varchar(100)  comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100)  comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date   datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date   datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
+   function_id          varchar(100) comment 'åŠŸèƒ½è¡¨id',
    primary key (id)
 );
 
-alter table sys_map_role_function comment '½ÇÉ«-¹¦ÄÜ¹ØÁª±í';
+alter table sys_map_role_function comment 'è§’è‰²-åŠŸèƒ½å…³è”è¡¨';
 
 /*==============================================================*/
 /* Table: sys_map_survey_user                                   */
 /*==============================================================*/
 create table sys_map_survey_user
 (
-   user_id              varchar(100) comment 'ÓÃ»§id',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
    id                   varchar(100) not null,
-   form_status          varchar(100) comment '±¨±íÉóºË×´Ì¬',
-   survey_id            varchar(100) comment 'µ÷²éid',
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date     datetime  comment '´´½¨ÈÕÆÚ',
-   common_modify_date     datetime  comment '×îºóĞŞ¸ÄÈÕÆÚ',
+   form_status          varchar(100) comment 'æŠ¥è¡¨å®¡æ ¸çŠ¶æ€',
+   survey_id            varchar(100) comment 'è°ƒæŸ¥id',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date     datetime  comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date     datetime  comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
    primary key (id)
 );
 
-alter table sys_map_survey_user comment 'µ÷²é-ÓÃ»§¹ØÁª±í';
+alter table sys_map_survey_user comment 'è°ƒæŸ¥-ç”¨æˆ·å…³è”è¡¨';
 
 /*==============================================================*/
 /* Table: sys_map_user_role                                     */
 /*==============================================================*/
 create table sys_map_user_role
 (
-   user_id              varchar(100) comment 'ÓÃ»§id',
-   role_id              varchar(100) comment '½ÇÉ«id',
+   user_id              varchar(100) comment 'ç”¨æˆ·id',
+   role_id              varchar(100) comment 'è§’è‰²id',
    id                   varchar(100) not null,
-   common_remarks       varchar(100) comment '±¸×¢',
-   common_del_flag      varchar(100) comment 'É¾³ı±ê¼Ç',
-   common_create_user_id varchar(100) comment '´´½¨Õßid',
-   common_modify_user_id varchar(100) comment '×îºóĞŞ¸ÄÕßid',
-   common_create_date    datetime comment '´´½¨ÈÕÆÚ',
-   common_modify_date    datetime comment '×îºóĞŞ¸ÄÈÕÆÚ',
+   common_remarks       varchar(100) comment 'å¤‡æ³¨',
+   common_del_flag      varchar(100) comment 'åˆ é™¤æ ‡è®°',
+   common_create_user_id varchar(100) comment 'åˆ›å»ºè€…id',
+   common_modify_user_id varchar(100) comment 'æœ€åä¿®æ”¹è€…id',
+   common_create_date    datetime comment 'åˆ›å»ºæ—¥æœŸ',
+   common_modify_date    datetime comment 'æœ€åä¿®æ”¹æ—¥æœŸ',
    primary key (id)
 );
 
-alter table sys_map_user_role comment 'ÓÃ»§-½ÇÉ«¹ØÁª±í';
+alter table sys_map_user_role comment 'ç”¨æˆ·-è§’è‰²å…³è”è¡¨';
 
